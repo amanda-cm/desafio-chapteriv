@@ -14,7 +14,7 @@ describe('cadastro', () => {
         cy.get('#SubmitCreate').click()
 
         //nova conta- cadastro de informações pessoais
-        cy.get('#id_gender2').check()
+        cy.get('input[type=radio]#id_gender2').check()
         cy.get('input[name=customer_firstname]').type(chance.first())
         cy.get('input[name=customer_lastname]').type(chance.last())
         cy.get('input[type=password]').type('azsxdc')
