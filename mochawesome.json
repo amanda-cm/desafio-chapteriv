@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-08T23:36:24.375Z",
-    "end": "2021-12-08T23:36:55.226Z",
-    "duration": 30851,
+    "start": "2021-12-09T00:01:06.142Z",
+    "end": "2021-12-09T00:01:38.086Z",
+    "duration": 31944,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "825e2c96-5e4a-4f19-a15c-b911890d7c1c",
+      "uuid": "e8b39056-2c0e-46a7-9706-9f73b10c16c6",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d56d3620-4b9e-4f34-ad12-ffc7770aef8a",
+          "uuid": "943a40e5-e716-4373-8733-e63151ec8fc8",
           "title": "cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando eu informar os dados e salvar, então o cadastro do usuário deve ser criado",
               "fullTitle": "cadastro Quando eu informar os dados e salvar, então o cadastro do usuário deve ser criado",
               "timedOut": null,
-              "duration": 27097,
+              "duration": 27653,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('http://automationpractice.com/index.php'); //autenticação\ncy.get('.login').click();\ncy.get('#email_create').type(chance.email());\ncy.get('#SubmitCreate').click(); //nova conta- cadastro de informações pessoais\ncy.get('input[type=radio]#id_gender2').check();\ncy.get('input[name=customer_firstname]').type(chance.first());\ncy.get('input[name=customer_lastname]').type(chance.last());\ncy.get('input[type=password]').type('azsxdc');\ncy.get('#days').select('13');\ncy.get('#months').select('8');\ncy.get('#years').select('2000');\ncy.get('#newsletter').check(); //nova conta- cadastro de endereço\ncy.get('input[name=firstname]').type(chance.first());\ncy.get('input[name=lastname]').type(chance.last());\ncy.get('#company').type(chance.company());\ncy.get('input[name=address1]').type(chance.address());\ncy.get('input[name=address2]').type('Apto 704');\ncy.get('#city').type(chance.city());\ncy.get('select[name=id_state]').select('Alaska');\ncy.get('#postcode').type(chance.zip());\ncy.get('#other').type('Additional information');\ncy.get('#phone').type(chance.phone());\ncy.get('input[name=phone_mobile]').type(chance.phone({\n  country: 'us',\n  mobile: true\n}));\ncy.get('#alias').type(chance.address());\ncy.get('#submitAccount').click(); //validação\ncy.url().should('contain', 'my-account');\ncy.get('.info-account').should('be.visible');",
               "err": {},
-              "uuid": "5e24d771-c70a-4a84-b3ac-d12467c9087e",
-              "parentUUID": "d56d3620-4b9e-4f34-ad12-ffc7770aef8a",
+              "uuid": "9d407af9-21fb-4edd-88b3-1ae8cf34acaa",
+              "parentUUID": "943a40e5-e716-4373-8733-e63151ec8fc8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5e24d771-c70a-4a84-b3ac-d12467c9087e"
+            "9d407af9-21fb-4edd-88b3-1ae8cf34acaa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 27097,
+          "duration": 27653,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
